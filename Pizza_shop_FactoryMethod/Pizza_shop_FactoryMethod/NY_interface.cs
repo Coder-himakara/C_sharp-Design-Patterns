@@ -29,14 +29,22 @@ namespace Pizza_shop_FactoryMethod
             if (obj1 != null)
             {
                 string pizzaType = ny_pizza_list.Text;
+                if (pizzaType!="")
+                {
+                    obj1.makeOrder(pizzaType);
+                    string text = obj1.getText1();
+                    display_box1.Items.Add(text);
+                    string text2 = obj1.getText2();
+                    display_box1.Items.Add(text2);
+                    string text3 = obj1.getText3();
+                    display_box1.Items.Add(text3);
+                }
+                else
+                {
+                    MessageBox.Show("Select your pizza type");
+                }
                 
-                obj1.makeOrder(pizzaType);               
-                string text = obj1.getText1();
-                display_box1.Items.Add(text);
-                string text2 = obj1.getText2();
-                display_box1.Items.Add(text2);
-                string text3 = obj1.getText3();
-                display_box1.Items.Add(text3);
+                
 
             }
             else
