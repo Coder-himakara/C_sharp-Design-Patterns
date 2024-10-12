@@ -22,8 +22,15 @@ namespace Pizza_shop_FactoryMethod
                nY_Interface.SetClassInstance(obj); //pass the object to NY_interface
                welcome_interface1.Visible =false ;
                nY_Interface.Visible = true;
-           
-
+            if (obj != null)
+            {
+                MessageBox.Show("Pizza factory is initialized.");
+            }
+            else
+            {
+                MessageBox.Show("Pizza factory is not initialized.");
+            }
+               
 
         }
 

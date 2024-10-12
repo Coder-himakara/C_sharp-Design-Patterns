@@ -15,9 +15,11 @@ namespace Pizza_shop_FactoryMethod
             sauce = "Plum Tomato Sauce";
             toppings.Add("Shredded Mozzarella Cheese");
         }
-        void  cut()
+        public string cut()
         {
-            Console.WriteLine("Cutting the pizza into square slices");
+            string cut_text = "Cutting the pizza into square slices";
+            return cut_text;
+            
         }
     }
 }

@@ -44,7 +44,7 @@
             // ny_pizza_list
             // 
             ny_pizza_list.FormattingEnabled = true;
-            ny_pizza_list.Items.AddRange(new object[] { "Cheese Pizza" });
+            ny_pizza_list.Items.AddRange(new object[] { "cheese" });
             ny_pizza_list.Location = new Point(29, 44);
             ny_pizza_list.Name = "ny_pizza_list";
             ny_pizza_list.Size = new Size(196, 28);

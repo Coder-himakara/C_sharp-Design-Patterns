@@ -19,14 +19,34 @@ namespace Pizza_shop_FactoryMethod
             InitializeComponent();
         }
 
+        public void SetClassInstance(NyPizzaStore obj)
+        {
+            obj1 = obj;
+        }
         private void order_ny_pizza(object sender, EventArgs e)
         {
+            obj1 = NyPizzaStore.getInstance();
+            if (obj1 != null)
+            {
+                string pizzaType = ny_pizza_list.Text;
+                
+                obj1.makeOrder(pizzaType);               
+                string text = obj1.getText1();
+                display_box1.Items.Add(text);
+                string text2 = obj1.getText2();
+                display_box1.Items.Add(text2);
+                string text3 = obj1.getText3();
+                display_box1.Items.Add(text3);
+
+            }
+            else
+            {
+                // Handle the case where obj1 is null
+                MessageBox.Show("Error: Pizza object is not initialized.");
+            }
 
         }
 
-        public void SetClassInstance(NyPizzaStore obj1)
-        {
-            this.obj1 = obj1;          
-        }
+       
     }
 }

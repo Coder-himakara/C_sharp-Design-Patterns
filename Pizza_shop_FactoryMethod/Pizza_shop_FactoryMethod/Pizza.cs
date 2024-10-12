@@ -16,6 +16,7 @@ namespace Pizza_shop_FactoryMethod
         
         public void prepare()
         {
+
             Console.WriteLine("Preparing " + name);
             Console.WriteLine("Tossing dough...");
             Console.WriteLine("Adding sauce...");
@@ -25,17 +26,23 @@ namespace Pizza_shop_FactoryMethod
                Console.WriteLine("   " + topping);
             }
         }
-        public void bake()
+        public string bake()
         {
-          Console.WriteLine("Bake for 25 minutes at 350");
+            string bake_text = "Bake for 25 minutes at 350";
+            return bake_text;
+         
         }
-        public void cut()
+        public string cut()
         {
-           Console.WriteLine("Cutting the pizza into diagonal slices");
+            string cut_text = "Cutting the pizza into diagonal slices";
+            return cut_text;
+            
         }
-        public void box()
+        public string box()
         {
-           Console.WriteLine("Place pizza in official PizzaStore box");
+            string box_text = "Place pizza in official PizzaStore box";
+            return box_text;
+           
         }
         public String getName()
         {
