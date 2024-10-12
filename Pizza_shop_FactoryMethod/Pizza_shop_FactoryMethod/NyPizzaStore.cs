@@ -8,10 +8,20 @@ namespace Pizza_shop_FactoryMethod
 {
     public class NyPizzaStore : PizzaStore
     {
-        public NyPizzaStore()
+        private static NyPizzaStore _instance;
+        private NyPizzaStore()
         {
 
         }
+        //Provide a singleton object
+        public static NyPizzaStore getInstance() {
+            if (_instance == null)
+            {
+                _instance = new NyPizzaStore();
+            }
+            return _instance;
+        }
+        // Factory method
         public override Pizza createPizza(String item)
         {
             if (item.Equals("cheese"))
