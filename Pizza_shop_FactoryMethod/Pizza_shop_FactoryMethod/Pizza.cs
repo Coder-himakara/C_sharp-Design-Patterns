@@ -14,7 +14,7 @@ namespace Pizza_shop_FactoryMethod
         protected string sauce;
         protected ArrayList toppings = new ArrayList();
         
-        void prepare()
+        public void prepare()
         {
             Console.WriteLine("Preparing " + name);
             Console.WriteLine("Tossing dough...");
@@ -25,15 +25,15 @@ namespace Pizza_shop_FactoryMethod
                Console.WriteLine("   " + topping);
             }
         }
-        void bake()
+        public void bake()
         {
           Console.WriteLine("Bake for 25 minutes at 350");
         }
-        void cut()
+        public void cut()
         {
            Console.WriteLine("Cutting the pizza into diagonal slices");
         }
-        void box()
+        public void box()
         {
            Console.WriteLine("Place pizza in official PizzaStore box");
         }
