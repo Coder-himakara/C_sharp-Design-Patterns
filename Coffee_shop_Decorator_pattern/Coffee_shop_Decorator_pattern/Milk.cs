@@ -13,11 +13,12 @@ namespace Coffee_shop_Decorator_pattern
         }
         public override string getDescription()
         {
-           return this.beverage.getDescription() + " ,Milk";          
+           string text = beverage.getDescription() + " ,Milk";  
+           return text;
         }
         public override double cost()
         {
-            return this.beverage.cost() + 0.20;
+            return beverage.cost() + 0.20;
         }
     }
 }

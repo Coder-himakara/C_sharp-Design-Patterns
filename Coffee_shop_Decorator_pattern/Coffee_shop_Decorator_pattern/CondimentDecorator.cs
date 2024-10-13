@@ -10,6 +10,6 @@ namespace Coffee_shop_Decorator_pattern
     {
         protected Beverage beverage;
 
-        public abstract string getDescription();
+        public abstract override string getDescription();
     }
 }

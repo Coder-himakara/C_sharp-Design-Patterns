@@ -8,12 +8,13 @@ namespace Coffee_shop_Decorator_pattern
 {
     public abstract class Beverage
     {
-        protected string description="";
+        protected string description="Unknown Beverage";
 
-        public string getDescription()
+        public virtual string getDescription()
         {
             return this.description;
         }
+        
         public abstract double cost();
     }
 }

@@ -14,7 +14,7 @@ namespace Coffee_shop_Decorator_pattern
         }
         public override double cost()
         {
-            return 1.99;
+            return 2.00;
         }
     }
 }

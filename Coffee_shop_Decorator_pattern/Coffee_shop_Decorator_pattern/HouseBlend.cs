@@ -10,11 +10,11 @@ namespace Coffee_shop_Decorator_pattern
     {
         public HouseBlend()
         {
-            this.description = "HosueBlend";
+            description = "HosueBlend";
         }
         public override double cost()
         {
-            return 1.89;
+            return 3.00;
         }
     }
 }
