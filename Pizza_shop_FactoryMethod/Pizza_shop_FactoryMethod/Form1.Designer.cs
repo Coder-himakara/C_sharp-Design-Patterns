@@ -34,8 +34,8 @@
             panel2 = new Panel();
             label1 = new Label();
             panel3 = new Panel();
-            nY_interface1 = new NY_interface();
             welcome_interface1 = new welcome_interface();
+            nY_interface1 = new NY_interface();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -100,19 +100,19 @@
             panel3.Size = new Size(592, 414);
             panel3.TabIndex = 2;
             // 
+            // welcome_interface1
+            // 
+            welcome_interface1.Location = new Point(0, 0);
+            welcome_interface1.Name = "welcome_interface1";
+            welcome_interface1.Size = new Size(740, 518);
+            welcome_interface1.TabIndex = 0;
+            // 
             // nY_interface1
             // 
             nY_interface1.Location = new Point(0, 0);
             nY_interface1.Name = "nY_interface1";
             nY_interface1.Size = new Size(740, 518);
             nY_interface1.TabIndex = 1;
-            // 
-            // welcome_interface1
-            // 
-            welcome_interface1.Location = new Point(3, 3);
-            welcome_interface1.Name = "welcome_interface1";
-            welcome_interface1.Size = new Size(740, 518);
-            welcome_interface1.TabIndex = 0;
             // 
             // Form1
             // 
